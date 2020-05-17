@@ -32,7 +32,7 @@ class PhotosTab extends React.Component {
     const { twitterAccount, tags, existingTagsList } = this.props;
     const uid = twitterAccount ? twitterAccount.uid : null
 
-    const imageUrlsByTweetId = Object.assign({}, twitterAccount.imageUrlsByTweetId);
+    const imageUrlsByTweetId = twitterAccount ? Object.assign({}, twitterAccount.imageUrlsByTweetId) : null;
 
     const photos = {};
     //TO DO TODO: make sure photos are in correct order.
