@@ -1,0 +1,41 @@
+{
+  "functions": {
+    "predeploy": [],
+    "source": "functions"
+  },
+  "hosting": {
+    "predeploy": [
+      "npm run-script build"
+    ],
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/startAuth",
+        "function": "startAuth"
+      },
+      {
+        "source": "/captureTweet",
+        "function": "captureTweet"
+      },
+      {
+        "source": "/linkTwitter",
+        "function": "linkTwitter"
+      },
+      {
+        "source": "/userAlreadyExists",
+        "function": "userAlreadyExists"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "cleanUrls": true,
+    "trailingSlash": false
+  }
+}

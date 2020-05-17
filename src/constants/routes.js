@@ -1,0 +1,10 @@
+export const SIGN_IN = '/';
+// export const LINK_TWITTER_PAGE = '/link-twitter';
+export const SIGN_UP = '/signup';
+export const AUTH_PAGE = '/auth-page';
+export const HOME = '/home';
+export const ACCOUNT = '/account';
+export const ADMIN = '/admin';
+// export const PASSWORD_FORGET = '/pw-forget';
+export const CONTACTS = '/contacts';
+export const TAG_PAGE = '/tag/:tagId';
